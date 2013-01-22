@@ -9,7 +9,7 @@
 
 	<parent>
 		<groupId>ar.com.masch.drum.learning</groupId>
-		<artifactId>exercises-druma</artifactId>
+		<artifactId>exercises-drum</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
