@@ -6,9 +6,10 @@
 	<name>exercises-drum-core</name>
 	<artifactId>exercises-drum-core</artifactId>
 
+
 	<parent>
 		<groupId>ar.com.masch.drum.learning</groupId>
-		<artifactId>exercises-drum</artifactId>
+		<artifactId>exercises-druma</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
