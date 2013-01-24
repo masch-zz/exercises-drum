@@ -21,4 +21,16 @@ public class ExerciseDTO extends ItemExerciseDTO {
 		this.chapterExerciseDTO = chapterExerciseDTO;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) return true;
+	    if (!(obj instanceof ExerciseDTO)) return false;
+		
+		ExerciseDTO exerciseCompareDTO = (ExerciseDTO) obj;
+		
+		return ((super.equals(exerciseCompareDTO)) &&
+			    (this.levelExerciseDTO.equals(exerciseCompareDTO.getLevelExerciseDTO())) &&
+			    (this.chapterExerciseDTO.equals(exerciseCompareDTO.getChapterExerciseDTO())));
+	}
+	
 }

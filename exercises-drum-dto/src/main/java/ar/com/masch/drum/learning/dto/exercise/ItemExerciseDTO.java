@@ -21,4 +21,15 @@ public class ItemExerciseDTO {
 		this.index = index;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) return true;
+	    if (!(obj instanceof ItemExerciseDTO)) return false;
+		
+	    ItemExerciseDTO itemExerciseCompareDTO = (ItemExerciseDTO) obj;
+	    
+		return ((this.getName().equals(itemExerciseCompareDTO.getName())) &&
+				(this.getIndex().equals(itemExerciseCompareDTO.getIndex())));
+	}	
+	
 }
