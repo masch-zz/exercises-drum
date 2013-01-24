@@ -1,27 +1,9 @@
 package ar.com.masch.drum.learning.dto.exercise;
 
-public class ExerciseDTO {
+public class ExerciseDTO extends ItemExerciseDTO {
 
-	private String name;	
-	private String index;
 	private LevelExerciseDTO levelExerciseDTO;
 	private ChapterExerciseDTO chapterExerciseDTO;
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getIndex() {
-		return index;
-	}
-	
-	public void setIndex(String index) {
-		this.index = index;
-	}
 	
 	public LevelExerciseDTO getLevelExerciseDTO() {
 		return levelExerciseDTO;
