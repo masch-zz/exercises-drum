@@ -3,6 +3,9 @@ package ar.com.masch.drum.learning.dto.exercise;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class ExerciseDTO extends ItemExerciseDTO {
+	
+	private int initialNonZeroOddNumber = 17;
+	private int multiplierNonZeroOddNumber = 31;	
 
 	private LevelExerciseDTO levelExerciseDTO;
 	private ChapterExerciseDTO chapterExerciseDTO;
@@ -44,7 +47,8 @@ public class ExerciseDTO extends ItemExerciseDTO {
 	
 	@Override
 	public int hashCode() {
-		return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
+		return new HashCodeBuilder(this.initialNonZeroOddNumber, this.multiplierNonZeroOddNumber). 
+										    // two randomly chosen prime numbers
 											// if deriving: appendSuper(super.hashCode()).
 					append(levelExerciseDTO).
 					append(chapterExerciseDTO).
