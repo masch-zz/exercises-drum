@@ -1,5 +1,7 @@
 package ar.com.masch.drum.learning.dto.exercise;
 
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 public class ItemExerciseDTO {
 	
 	private String name;	
@@ -23,6 +25,9 @@ public class ItemExerciseDTO {
 
 	@Override
 	public boolean equals(Object obj) {
+		if (this == null) {
+			return false;
+		}		
 	    if (this == obj) {
 	    	return true;
 	    }
@@ -36,4 +41,12 @@ public class ItemExerciseDTO {
 				(this.getIndex().equals(itemExerciseCompareDTO.getIndex())));
 	}	
 	
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
+											// if deriving: appendSuper(super.hashCode()).
+					append(name).
+					append(index).
+					toHashCode();
+	}	
 }

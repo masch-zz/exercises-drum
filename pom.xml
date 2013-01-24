@@ -28,6 +28,14 @@
 	
 	<dependencies>
 	
+		<!-- RELEASE -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+  			<artifactId>commons-lang3</artifactId>
+  			<version>3.1</version>
+		</dependency>
+	
+	
 		<!-- TESTING -->
 		<dependency>
 			<groupId>junit</groupId>
