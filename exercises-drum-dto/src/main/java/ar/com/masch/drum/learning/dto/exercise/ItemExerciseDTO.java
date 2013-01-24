@@ -4,8 +4,8 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class ItemExerciseDTO {
 	
-	private int initialNonZeroOddNumber = 17;
-	private int multiplierNonZeroOddNumber = 31;
+	private static final int INITIAL_ODD_NUMBER_HAS_CODE = 17;
+	private static final int MULTIPLIER_ODD_NUMBER_HAS_CODE = 31;
 	
 	private String name;	
 	private String index;
@@ -46,9 +46,9 @@ public class ItemExerciseDTO {
 	
 	@Override
 	public int hashCode() {
-		return new HashCodeBuilder(this.initialNonZeroOddNumber, this.multiplierNonZeroOddNumber). 
-											// two randomly chosen prime numbers
-											// if deriving: appendSuper(super.hashCode()).
+		return new HashCodeBuilder(INITIAL_ODD_NUMBER_HAS_CODE, MULTIPLIER_ODD_NUMBER_HAS_CODE). 
+								   // two randomly chosen prime numbers
+								   // if deriving: appendSuper(super.hashCode()).
 					append(this.name).
 					append(this.index).
 					toHashCode();
