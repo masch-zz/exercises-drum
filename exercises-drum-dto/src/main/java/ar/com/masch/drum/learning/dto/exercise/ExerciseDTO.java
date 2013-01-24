@@ -23,8 +23,12 @@ public class ExerciseDTO extends ItemExerciseDTO {
 	
 	@Override
 	public boolean equals(Object obj) {
-	    if (this == obj) return true;
-	    if (!(obj instanceof ExerciseDTO)) return false;
+	    if (this == obj) {
+	    	return true;
+	    }
+	    if (!(obj instanceof ExerciseDTO)) {
+	    	return false;
+	    }
 		
 		ExerciseDTO exerciseCompareDTO = (ExerciseDTO) obj;
 		
